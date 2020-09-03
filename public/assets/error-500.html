@@ -4,14 +4,10 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-
-  	<% base_tag %>
-	  
-	<meta charset="utf-8" />
-	
-	<!-- Page Title -->
-	$MetaTags
-	
+	<base href="http://localhost:8888/silverstripe-lessons-v4/Lesson-04-begin/public/"><!--[if lte IE 6]></base><![endif]-->
+	<title>Server error</title>
+<meta name="generator" content="SilverStripe - http://silverstripe.org" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 	
@@ -31,7 +27,6 @@
 	
 	<!-- Modernizr -->
 	<script src="javascript/common/modernizr.js"></script>
-
 </head>
 <body>
 	<!-- BEGIN WRAPPER -->
@@ -44,17 +39,17 @@
 					<div class="row">
 						<div class="col-sm-12">							
 							<ul id="top-buttons">
-								<li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
-								<li><a href="#"><i class="fa fa-pencil-square-o"></i> Register</a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-sign-in"></i> Login</a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-pencil-square-o"></i> Register</a></li>
 								<li class="divider"></li>
 								<li>
 									<div class="language-switcher">
 										<span><i class="fa fa-globe"></i> English</span>
 										<ul>
-											<li><a href="#">Deutsch</a></li>
-											<li><a href="#">Espa&ntilde;ol</a></li>
-											<li><a href="#">Fran&ccedil;ais</a></li>
-											<li><a href="#">Portugu&ecirc;s</a></li>
+											<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#">Deutsch</a></li>
+											<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#">Espa&ntilde;ol</a></li>
+											<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#">Fran&ccedil;ais</a></li>
+											<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#">Portugu&ecirc;s</a></li>
 										</ul>
 									</div>
 								</li>
@@ -68,16 +63,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<a href="index.html" class="nav-logo"><img src="images/logo.png" alt="One Ring Rentals" /></a>
+							<a href="http://localhost:8888/silverstripe-lessons-v4/Lesson-04-begin/public/" class="nav-logo"><img src="images/logo.png" alt="One Ring Rentals" /></a>
 														
 							<!-- BEGIN MAIN MENU -->
 							<nav class="navbar">
 								<button id="nav-mobile-btn"><i class="fa fa-bars"></i></button>
 								
 								<ul class="nav navbar-nav">
-									<% loop $Menu(1) %>
-									<li><a class="$LinkingMode" href="$Link" title="Go to the $Title page">$MenuTitle</a></li>
-									<% end_loop %>
+									
+									  <li><a class="link" href="/silverstripe-lessons-v4/Lesson-04-begin/public/" title="Go to the Home page">Home</a></li>
+									
+									  <li><a class="link" href="/silverstripe-lessons-v4/Lesson-04-begin/public/about-us/" title="Go to the About Us page">About Us</a></li>
+									
+									  <li><a class="link" href="/silverstripe-lessons-v4/Lesson-04-begin/public/contact-us/" title="Go to the Contact Us page">Contact Us</a></li>
+									
 								</ul>
 							
 							</nav>
@@ -95,10 +94,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<h1 class="page-title">$Title</h1>
+						<h1 class="page-title">Server error</h1>
 						
 						<div class="breadcrumb">
-							$BreadCrumbs
+							
+
+	Server error
+
+
 						</div>
 					</div>
 				</div>
@@ -112,18 +115,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="main col-sm-8">						
-						$Content
+						<p>Sorry, there was a problem with handling your request.</p>
+						
 					</div>
 					
 					<div class="sidebar gray col-sm-4">
-						<% if $Menu(2) %>
-							<h3>In this section</h3>
-							<ul class="subnav">  
-							<% loop $Menu(2) %>
-								<li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-							<% end_loop %>
-							</ul>
-						<% end_if %>
+						
 					</div>
 				</div>
 			</div>
@@ -137,16 +134,16 @@
 			<div id="footer-top" class="container">
 				<div class="row">
 					<div class="block col-sm-3">
-						<a href="#"><img src="images/logo.png" alt="One Ring Rentals" /></a>
+						<a href="http://localhost:8888/silverstripe-lessons-v4/Lesson-04-begin/public/"><img src="images/logo.png" alt="One Ring Rentals" /></a>
 						<br><br>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo eros nibh, et dictum elit tincidunt eget. Pellentesque volutpat quam dignissim, convallis elit id, efficitur sem. Vivamus ac scelerisque sem. Aliquam sed enim rutrum nibh gravida pellentesque nec at metus. In hac habitasse platea dictumst. Etiam in rhoncus mi. In hac habitasse platea dictumst. Mauris congue blandit venenatis.</p>
 					</div>
 					<div class="block col-sm-3">
 						<h3>Helpful Links</h3>
 						<ul class="footer-links">
-							<li><a href="#">All rentals</a></li>
-							<li><a href="#">List your rental</a></li>
-							<li><a href="#">Read our FAQs</a></li>							
+							<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#">All rentals</a></li>
+							<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#">List your rental</a></li>
+							<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#">Read our FAQs</a></li>							
 						</ul>
 					</div>
 					<div class="block col-sm-6">
@@ -211,12 +208,12 @@
 							
 							<!-- BEGIN SOCIAL NETWORKS -->
 							<ul class="social-networks">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-google"></i></a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="/silverstripe-lessons-v4/Lesson-04-begin/public/server-error/#"><i class="fa fa-rss"></i></a></li>
 							</ul>
 							<!-- END SOCIAL NETWORKS -->
 						
