@@ -3,45 +3,29 @@
     "type": "silverstripe-recipe",
     "description": "The SilverStripe Framework Installer",
     "require": {
-        "php": ">=5.6.0",
-        "silverstripe/recipe-cms": "^1.1"
+        "php": ">=7.1.0",
+        "silverstripe/recipe-plugin": "^1.2",
+        "silverstripe/recipe-cms": "4.6.1@stable",
+        "silverstripe-themes/simple": "~3.2.0",
+        "silverstripe/login-forms": "4.1.2@stable"
     },
     "require-dev": {
-        "phpunit/PHPUnit": "^5.7"
-    },
-    "autoload": {
-        "psr-4": {
-            "SilverStripe\\Lessons\\": "app/src/"
-        },
-        "classmap": [
-            "app/src/Page.php",
-            "app/src/PageController.php"
-        ]
+        "phpunit/phpunit": "^5.7",
+        "sminnee/phpunit-mock-objects": "^3.4.5"
     },
     "extra": {
-        "branch-alias": {
-            "4.x-dev": "4.0.x-dev",
-            "dev-master": "5.x-dev"
-        },
+        "resources-dir": "_resources",
         "project-files-installed": [
-            ".htaccess",
             "app/.htaccess",
             "app/_config.php",
+            "app/_config/mimevalidator.yml",
             "app/_config/mysite.yml",
             "app/src/Page.php",
-            "app/src/PageController.php",
-            "mysite/.htaccess",
-            "mysite/_config.php",
-            "mysite/_config/mysite.yml",
-            "mysite/code/Page.php",
-            "mysite/code/PageController.php",
-            "web.config"
+            "app/src/PageController.php"
         ],
         "public-files-installed": [
             ".htaccess",
             "index.php",
-            "install-frameworkmissing.html",
-            "install.php",
             "web.config"
         ]
     },
@@ -49,5 +33,10 @@
         "process-timeout": 600
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "SilverStripe\\Lessons\\": "src/"
+        }
+    }
 }
