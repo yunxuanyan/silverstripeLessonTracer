@@ -21,7 +21,10 @@
 					<ul>
 						<li><i class="fa fa-calendar"></i>$Date.Nice</li>
 						<li><i class="fa fa-comments-o"></i> 3 Comments</li>
-						<li><i class="fa fa-tags"></i> Properties, Prices, best deals</li>
+						<!-- <li><i class="fa fa-tags"></i> 
+							<% loop $Categories %>$Title<% if not $Last %>, <% end_if %><% end_loop %>
+						</li> -->
+						<li><i class="fa fa-tags"></i> $CategoriesList</li>
 					</ul>
 					
 					<div id="post-author"><i class="fa fa-pencil"></i> By $Author </div>
